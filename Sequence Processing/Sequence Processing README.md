@@ -21,6 +21,7 @@ The following reference links were used to create this project:
 • [Pad Sequences Documentation](https://www.tensorflow.org/api_docs/python/tf/keras/utils/pad_sequences)
 • [API Reference](https://pandas.pydata.org/docs/reference/index.html)
 • [Tensor Flow documentation](https://www.tensorflow.org/)
+• [Keras Documentation](https://keras.io/)
 
 ----
 
