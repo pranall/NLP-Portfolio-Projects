@@ -29,6 +29,8 @@ The following reference links were used to create this project:
 
 [GloVe pre-trained word vectors Dataset](https://nlp.stanford.edu/projects/glove/)
 
+All three datasets have been uploaded in this repo under data.zip file.
+
 The dataset consists of token-level annotations following a BIO schema with three labels: `B-Quantity`, `I-Quantity`, and `O`.
 
 * **Train set:** 248 articles, 1366 sentences
