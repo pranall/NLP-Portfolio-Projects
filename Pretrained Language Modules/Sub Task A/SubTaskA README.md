@@ -27,30 +27,6 @@ Each pair is labeled `0` if the first statement is nonsensical, or `1` if the se
 
 The dataset can be loaded into `Datasets` objects and pre-processed using the Hugging Face [Datasets](https://huggingface.co/docs/datasets/index) library, including tokenization of the statement pairs with the model’s tokenizer.
 
-===
-
-The following list of links were used for reference in this project:
-
-• [Transformers Library](https://huggingface.co/docs/transformers/index)
-• [Hugging Face Hub](https://huggingface.co/models)
-• [RoBERTa Model](https://huggingface.co/docs/transformers/model_doc/roberta)
-• [AutoClasses](https://huggingface.co/docs/transformers/v4.27.2/en/model_doc/auto)
-• [AutoClasses Doc](https://huggingface.co/docs/transformers/main/en/autoclass_tutorial)
-• [Datasets](https://huggingface.co/docs/datasets/index)
-• [Hugging Face Datasets](https://huggingface.co/datasets)
-• [Dataset {different from Datasets}](https://huggingface.co/docs/datasets/v2.10.0/en/package_reference/main_classes#datasets.Dataset)
-• [Apache Arrow Table](https://arrow.apache.org/docs/python/generated/pyarrow.Table.html)
-• [Hugging Face: Map](https://huggingface.co/docs/datasets/v2.10.0/en/nlp_process#map)
-• [Hugging Face: Preprocessing](https://huggingface.co/docs/transformers/v4.27.2/en/preprocessing)
-• [Hugging Face: Tokenizer](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/tokenizer)
-• [Batch Encoding](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/tokenizer#transformers.BatchEncoding)
-• [Trainer](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer)
-• [Training Arguments](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer#transformers.TrainingArguments)
-• [Fine Tuning](https://huggingface.co/docs/transformers/training)
-• [Trainer Predict](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer#transformers.Trainer.predict)
-• [NumPy Argmax](https://numpy.org/doc/stable/reference/generated/numpy.argmax.html)
-• [Hugging Face: Evaluate](https://huggingface.co/docs/evaluate/index)
-
 ---
 
 ## Model
