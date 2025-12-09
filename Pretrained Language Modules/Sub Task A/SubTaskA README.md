@@ -2,6 +2,8 @@
 
 This project focuses on **SubTask A** of the [ComVE](https://competitions.codalab.org/competitions/21080) shared task from SemEval-2020, which evaluates whether a system can identify which of two similar natural language statements is nonsensical.
 
+---
+
 ## Project Description
 
 Given two statements that differ by only a few words, the goal is to select the one that does not make sense. For example:
@@ -10,6 +12,8 @@ Given two statements that differ by only a few words, the goal is to select the 
 * **Statement 2:** He put an elephant into the fridge.
 
 Here, Statement 2 is nonsensical. This can be approached as a **Text Matching** problem, where the model predicts a label indicating which statement is nonsensical.
+
+---
 
 ## Dataset
 
@@ -23,9 +27,37 @@ Each pair is labeled `0` if the first statement is nonsensical, or `1` if the se
 
 The dataset can be loaded into `Datasets` objects and pre-processed using the Hugging Face [Datasets](https://huggingface.co/docs/datasets/index) library, including tokenization of the statement pairs with the model’s tokenizer.
 
+===
+
+The following list of links were used for reference in this project:
+
+• [Transformers Library](https://huggingface.co/docs/transformers/index)
+• [Hugging Face Hub](https://huggingface.co/models)
+• [RoBERTa Model](https://huggingface.co/docs/transformers/model_doc/roberta)
+• [AutoClasses](https://huggingface.co/docs/transformers/v4.27.2/en/model_doc/auto)
+• [AutoClasses Doc](https://huggingface.co/docs/transformers/main/en/autoclass_tutorial)
+• [Datasets](https://huggingface.co/docs/datasets/index)
+• [Hugging Face Datasets](https://huggingface.co/datasets)
+• [Dataset {different from Datasets}](https://huggingface.co/docs/datasets/v2.10.0/en/package_reference/main_classes#datasets.Dataset)
+• [Apache Arrow Table](https://arrow.apache.org/docs/python/generated/pyarrow.Table.html)
+• [Hugging Face: Map](https://huggingface.co/docs/datasets/v2.10.0/en/nlp_process#map)
+• [Hugging Face: Preprocessing](https://huggingface.co/docs/transformers/v4.27.2/en/preprocessing)
+• [Hugging Face: Tokenizer](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/tokenizer)
+• [Batch Encoding](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/tokenizer#transformers.BatchEncoding)
+• [Trainer](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer)
+• [Training Arguments](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer#transformers.TrainingArguments(
+• [Fine Tuning](https://huggingface.co/docs/transformers/training)
+• [Trainer Predict](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer#transformers.Trainer.predict)
+• [NumPy Argmax](https://numpy.org/doc/stable/reference/generated/numpy.argmax.html)
+• [Hugging Face: Evaluate](https://huggingface.co/docs/evaluate/index)
+
+---
+
 ## Model
 
 This project uses **RoBERTa**, a Pre-trained Language Model based on BERT architecture, fine-tuned for sequence classification with the [Transformers](https://huggingface.co/docs/transformers/index) library.
+
+---
 
 ### Steps:
 
@@ -34,6 +66,8 @@ This project uses **RoBERTa**, a Pre-trained Language Model based on BERT archit
 3. **Trainer Creation:** The Hugging Face `Trainer` API is used to fine-tune the model on the train dataset and evaluate on the development dataset.
 4. **Prediction:** After training, the `Trainer.predict` method produces logits for each example. Predictions are converted to labels by selecting the class with the highest logit.
 5. **Evaluation:** Accuracy is computed by comparing predictions with true labels using the Hugging Face [evaluate](https://huggingface.co/docs/evaluate/index) library.
+
+----
 
 ### Example Prediction
 
@@ -44,15 +78,21 @@ For the statement pair:
 
 The model outputs logits `[0.1005, -0.0192]`, so the predicted label is `0`, indicating Statement 1 is nonsensical.
 
+-----
+
 ## Hyperparameters and Training
 
 * Fine-tuning uses configurable hyperparameters including `epochs`, `batch_size`, and `learning_rate`.
 * For quick experimentation, a reduced dataset and base model can be used (`shrink_dataset=True`, `base_model=True`). Full training (`shrink_dataset=False`, `base_model=False`) achieves significantly higher performance.
 
+----
+
 ## Results
 
 * **Reduced Training:** Accuracy ≈ 0.49
 * **Full Training:** Accuracy ≈ 0.929
+
+-----
 
 ## Notes
 
