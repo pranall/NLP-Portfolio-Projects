@@ -45,7 +45,7 @@ The following list of links were used for reference in this project:
 • [Hugging Face: Tokenizer](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/tokenizer)
 • [Batch Encoding](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/tokenizer#transformers.BatchEncoding)
 • [Trainer](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer)
-• [Training Arguments](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer#transformers.TrainingArguments(
+• [Training Arguments](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer#transformers.TrainingArguments)
 • [Fine Tuning](https://huggingface.co/docs/transformers/training)
 • [Trainer Predict](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer#transformers.Trainer.predict)
 • [NumPy Argmax](https://numpy.org/doc/stable/reference/generated/numpy.argmax.html)
