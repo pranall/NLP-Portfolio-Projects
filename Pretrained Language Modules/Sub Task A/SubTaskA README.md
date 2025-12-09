@@ -2,7 +2,7 @@
 
 This project focuses on **SubTask A** of the [ComVE](https://competitions.codalab.org/competitions/21080) shared task from SemEval-2020, which evaluates whether a system can identify which of two similar natural language statements is nonsensical.
 
-## Task Description
+## Project Description
 
 Given two statements that differ by only a few words, the goal is to select the one that does not make sense. For example:
 
