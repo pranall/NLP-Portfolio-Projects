@@ -2,6 +2,8 @@
 
 This repository contains implementations for all three subtasks of the [ComVE](https://competitions.codalab.org/competitions/21080) shared task from SemEval-2020. The project focuses on evaluating whether systems can determine if a natural language statement makes sense and provide explanations.
 
+---
+
 ## Project Overview
 
 ### SubTask A – Statement Pair Classification
@@ -22,6 +24,8 @@ This repository contains implementations for all three subtasks of the [ComVE](h
 * **Approach:** Treated as a sequence-to-sequence problem; fine-tuned **BART** using `Seq2SeqTrainer`.
 * **Evaluation:** BLEU and ROUGE scores.
 
+-----
+
 ## Dataset
 
 * **Training:** 10,000 statements for SubTask C; 9,997 statement pairs for SubTask A; 9,997 statements for SubTask B
@@ -29,6 +33,8 @@ This repository contains implementations for all three subtasks of the [ComVE](h
 * **Test:** 1,000 examples
 
 All datasets were pre-processed using the Hugging Face `Datasets` library and tokenized using the model-specific tokenizer.
+
+------
 
 ## Requirements
 
@@ -44,6 +50,8 @@ Optional for GPU training:
 
 * CUDA-enabled GPU or TPU (Google Colab recommended for full-scale training)
 
+---
+
 ## Usage
 
 1. Load the dataset using provided functions.
@@ -53,8 +61,37 @@ Optional for GPU training:
 5. Make predictions on the test set.
 6. Evaluate performance using accuracy (SubTask A/B) or BLEU/ROUGE (SubTask C).
 
+----
+
 ## Notes
 
 * Reduced datasets and base models were used for quicker experimentation (`shrink_dataset=True`, `base_model=True`).
 * Full training with the entire dataset and large models can be performed in Google Colab.
 * Random seed initialization ensured reproducibility, though minor variations may occur due to hardware/software differences.
+
+----
+
+## References
+
+The following list of links were used for reference in this project:
+
+• [Transformers Library](https://huggingface.co/docs/transformers/index)
+• [Hugging Face Hub](https://huggingface.co/models)
+• [RoBERTa Model](https://huggingface.co/docs/transformers/model_doc/roberta)
+• [AutoClasses](https://huggingface.co/docs/transformers/v4.27.2/en/model_doc/auto)
+• [AutoClasses Doc](https://huggingface.co/docs/transformers/main/en/autoclass_tutorial)
+• [Datasets](https://huggingface.co/docs/datasets/index)
+• [Hugging Face Datasets](https://huggingface.co/datasets)
+• [Dataset {different from Datasets}](https://huggingface.co/docs/datasets/v2.10.0/en/package_reference/main_classes#datasets.Dataset)
+• [Apache Arrow Table](https://arrow.apache.org/docs/python/generated/pyarrow.Table.html)
+• [Hugging Face: Map](https://huggingface.co/docs/datasets/v2.10.0/en/nlp_process#map)
+• [Hugging Face: Preprocessing](https://huggingface.co/docs/transformers/v4.27.2/en/preprocessing)
+• [Hugging Face: Tokenizer](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/tokenizer)
+• [Batch Encoding](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/tokenizer#transformers.BatchEncoding)
+• [Trainer](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer)
+• [Training Arguments](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer#transformers.TrainingArguments)
+• [Fine Tuning](https://huggingface.co/docs/transformers/training)
+• [Trainer Predict](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer#transformers.Trainer.predict)
+• [NumPy Argmax](https://numpy.org/doc/stable/reference/generated/numpy.argmax.html)
+• [Hugging Face: Evaluate](https://huggingface.co/docs/evaluate/index)
+
