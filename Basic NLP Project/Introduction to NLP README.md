@@ -55,7 +55,7 @@ The structure reproduced the expected annotations for all sentences, including s
 
 ## 5. Custom Tokenizer
 
-The default spaCy tokenizer did not split dates formatted as `month/day/year`. The `customize_tokenizer` function updated the pipeline by extending the tokenizer’s **infix rules** to include a pattern for the slash (`/`). All other tokenizer components—vocabulary, prefixes, infixes, suffixes, and matching rules—were preserved.
+The default spaCy tokenizer did not split dates formatted as `month/day/year`. The `customize_tokenizer` function updated the pipeline by extending the tokenizer’s **infix rules** to include a pattern for the slash (`/`). All other tokenizer components vocabulary, prefixes, infixes, suffixes, and matching rules were preserved.
 With the updated infix pattern, dates such as `06/01/2023` were correctly segmented into the components `06`, `/`, `01`, `/`, `2023`.
 
 ---
