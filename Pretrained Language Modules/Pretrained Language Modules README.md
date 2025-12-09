@@ -94,4 +94,8 @@ The following list of links were used for reference in this project:
 • [Trainer Predict](https://huggingface.co/docs/transformers/v4.27.2/en/main_classes/trainer#transformers.Trainer.predict)
 • [NumPy Argmax](https://numpy.org/doc/stable/reference/generated/numpy.argmax.html)
 • [Hugging Face: Evaluate](https://huggingface.co/docs/evaluate/index)
+• [ComVE Dataset](https://competitions.codalab.org/competitions/21080)
+• [Transformers Library Documentation](https://huggingface.co/docs/transformers/index)
+• [BART Model Documentation](https://huggingface.co/docs/transformers/model_doc/bart)
+• [Seq2Seq Trainer Guide](https://huggingface.co/docs/transformers/tasks/seq2seq)
 
