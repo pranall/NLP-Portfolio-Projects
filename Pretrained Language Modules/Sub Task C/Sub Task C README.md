@@ -66,11 +66,3 @@ Fine-tuning a pre-trained language model requires significant computational reso
 * **Metrics:** BLEU and ROUGE scores were used to evaluate the generated reasons.
 * **Expected scores with `shrink_dataset=True` and `base_model=True`:** BLEU ≈ 0.216, ROUGE ≈ 0.446
 * **Expected scores with full training:** BLEU ≈ 0.228, ROUGE ≈ 0.461
-
-## References
-
-* [ComVE Dataset](https://competitions.codalab.org/competitions/21080)
-* [Transformers Library Documentation](https://huggingface.co/docs/transformers/index)
-* [BART Model Documentation](https://huggingface.co/docs/transformers/model_doc/bart)
-* [Seq2Seq Trainer Guide](https://huggingface.co/docs/transformers/tasks/seq2seq)
-
